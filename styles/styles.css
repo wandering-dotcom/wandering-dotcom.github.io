@@ -1,4 +1,6 @@
 body {
+    background-color: #fbe4bb;
+    color: #000000;              
     font-family: "Palatino Linotype", Palatino, "Times New Roman", Times, serif;
     line-height: 1.6;
     margin: 2rem;
@@ -14,8 +16,15 @@ header {
     margin-bottom: 2rem;
 }
 
-h1, h2, h3 {
-    font-family: "Georgia", serif;
+h1, h3 {
+    color: #1b571b;
+    font-family: 'Georgia', serif;
+    margin-bottom: 0rem;
+}
+
+h2 {
+    color: #1b571b;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 0rem;
 }
 
