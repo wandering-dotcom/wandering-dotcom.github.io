@@ -4,20 +4,78 @@
         <meta charset="utf-8" />
         <title>Dana Van Personal Page</title>
         <style>
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                margin: 2rem;
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
+            header {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            header img {
+                width: 120px;
+                height: auto;
+                border-radius: 50%;
+            }
+
+            h1, h2, h3 {
+                margin-bottom: 0.5rem;
+            }
+
+            ul {
+                margin-left: 2rem;
+                padding-left: 1rem;
+            }
+
+            table {
+                margin-left: 1rem;
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            td {
+                padding: 0.5rem;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+
+            .job {
+                margin-bottom: 2rem;
+            }
+
+            .job-header {
+                display: flex;
+                justify-content: space-between;
+                font-weight: bold;
+            }
+
+            .job-description {
+                margin-top: 0.5rem;
+                margin-left: 1rem;
+            }
         </style>
     </head>
 
     <body>
     <!-- headshot photo, name, and some subheading (socials)-->
-        <img src="images/headshot.jpg" alt="headshot" style="width: 300px; height: auto;">
-        <h1 id="name">Dana Van</h1>
-        <h2 id="socials">Student at UC Riverside</h2>
-        <p>
-            <a href="https://www.linkedin.com/in/dana-van-3bb256335" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/wandering-dotcom" target="_blank">GitHub</a> |
-            <a href="mailto:dana.van@email.ucr.edu">Email</a>
-        </p>
+        <header>
+            <img src="images/headshot.jpg" alt="headshot" style="width: 300px; height: auto;">
+            <h1 id="name">Dana Van</h1>
+            <h2 id="socials">Student at UC Riverside</h2>
+            <p>
+                <a href="https://www.linkedin.com/in/dana-van-3bb256335" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/wandering-dotcom" target="_blank">GitHub</a> |
+                <a href="mailto:dana.van@email.ucr.edu">Email</a>
+            </p>
+        </header>
     
     <!-- about me, work experience, education, coursework-->
         <h3 id="about-me">About Me</h3>
