@@ -40,6 +40,15 @@
                 margin-bottom: 2rem;
             }
 
+            .job-header td,
+            .job-description td {
+              padding: 0; /* keeps rows tight within the same job */
+            }
+            
+            .row2 td {
+              padding-top: 0.25rem; /* optional: a tiny gap between title and description */
+            }
+
             td {
                 border: none;
                 text-align: left;
@@ -85,7 +94,7 @@
         <table style="width: 100%; border-collapse: collapse;" border="1">
             <tbody>      
             <!-- job 1-->
-                <tr>
+                <tr class="job-header">
                     <td><strong>Jia Lab Pomegranate Breeding Team</strong></td>
                     <td>Undergraduate Researcher</td>
                     <td>March 2024 - Present</td>
@@ -96,7 +105,7 @@
                     </td>
                 </tr>
         <!-- job 2-->
-                <tr>
+                <tr class="job-header">
                     <td><strong>Huntington Beach High School</strong></td>
                     <td>Honors & AP Bio Teacher Assistant</td>
                     <td>Sep 2023 - June 2024</td>
