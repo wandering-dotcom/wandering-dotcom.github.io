@@ -1,5 +1,5 @@
 body {
-    background-color: #fbe4bb;
+    background-color: #ffeccc;
     color: #000000;              
     font-family: "Palatino Linotype", Palatino, "Times New Roman", Times, serif;
     line-height: 1.6;
@@ -17,13 +17,13 @@ header {
 }
 
 h1, h3 {
-    color: #1b571b;
+    color: #107610;
     font-family: 'Georgia', serif;
     margin-bottom: 0rem;
 }
 
 h2 {
-    color: #1b571b;
+    color: #37b437;
     font-family: 'Playfair Display', serif;
     margin-bottom: 0rem;
 }
