@@ -4,10 +4,11 @@
         <meta charset="utf-8" />
         <title>Dana Van Personal Page</title>
         <link rel="stylesheet" href="styles/styles.css">
+        <!-- <link rel="stylesheet" href="styles/styles.css"> -->
     </head>
 
     <body>
-    <!-- headshot photo, name, and some subheading (socials)-->
+    <!-- headshot photo, name, and some subheading (socials) -->
         <header>
             <img src="images/headshot.jpg" alt="headshot" style="width: 300px; height: auto;">
             <h1 id="name">Dana Van</h1>
@@ -18,36 +19,39 @@
                 <a href="mailto:dana.van@email.ucr.edu">Email</a>
             </p>
         </header>
+
+    <!-- navigation icon row -->
     
-    <!-- about me, work experience, education, coursework-->
-        <h3 id="about-me">About Me</h3>
+    <!-- about me, work experience, education, coursework -->
+        <h3 id="about-me"><img src="images/icons/user.png" alt="Me icon" class="icon">About Me</h3>
         <p>Hello! My name is Dana, and I am a Statistics major at UC Riverside. </p>
 
-        <h3 id="work-experience">Work Experience</h3>
+        <h3 id="work-experience"><img src="images/icons/corporate-alt.png" alt="Work icon" class="icon">Work Experience</h3>
         <div class="job-entry">   
-            <!-- job 1-->
+            <!-- job 1 -->
                 <div class="job-header">
-                    <td><strong>Jia Lab Pomegranate Breeding Team, </strong></td>
-                    <td>Undergraduate Researcher, </td>
-                    <td>March 2024 - Present</td>
+                    <div class="job-company"><strong>Jia Lab Pomegranate Breeding Team, </strong></div>
+                    <div class="job-title">Undergraduate Researcher </div>
+                    <div class="job-dates">March 2024 - Present</div>
                 </div>
                 <div class="job-description">
                     Initially, I worked with the DNA Barcoding team by gathering samples and preparing for DNA extraction. Now, I am working with the Bioinformatics team by applying statistical models on collected data.
                 </div>
         </div>
         <div class="job-entry">
-            <!-- job 2-->
+            <!-- job 2 -->
                 <div class="job-header">
-                    <td><strong>Huntington Beach High School, </strong></td>
-                    <td>Honors & AP Bio Teacher Assistant, </td>
-                    <td>Sep 2023 - June 2024</td>
+                    <div class="job-company"><strong>Huntington Beach High School, </strong></div>
+                    <div class="job-title">Honors & AP Bio Teacher Assistant </div>
+                    <div class="job-dates">Sep 2023 - June 2024</div>
                 </div>
                 <div class="job-description">
                     I collaborated with fellow student TAs and instructors for course planning and to ensure timely grading. I also communicated with students in missing coursework and submission errors on the Canvas platform. 
                 </div>
         </div>
 
-        <h3 id="education">Education</h3>
+        
+        <h3 id="education"><img src="images/icons/graduation-cap.png" alt="School icon" class="icon">Education</h3>
                 <div class="flex-table">
             <div class="education">
                 <div class="row">
@@ -58,7 +62,7 @@
             </div>
         </div>
 
-        <h3 id="courses">Coursework</h3>
+        <h3 id="courses"><img src="images/icons/workshop.png" alt="Coursework icon" class="icon">Coursework</h3>
         <ul>
             <li>CS 100: Software Construction</li>
             <li>CS 010C: Intro to Data Structures and Algorithms</li>
@@ -67,7 +71,7 @@
         </ul>
 
     <!-- skills, projects -->
-        <h3 id="skills">Skills</h3>
+        <h3 id="skills"><img src="images/icons/user-skill-gear.png" alt="Skill icon" class="icon">Skills</h3>
         <ul>
             <li>C++ / GDScript </li>
             <li> R / SQL </li>
@@ -75,7 +79,7 @@
             <li>Figma / PowerBI / Canva</li>
         </ul>
 
-        <h3 id="projects">Projects</h3>
+        <h3 id="projects"><img src="images/icons/master-plan.png" alt="Project icon" class="icon">Projects</h3>
         <ul>
             <li>
                 <strong>Rhythm Game</strong> – A music-based game where players try to sync tapping on keyboard keys to the beat created for CS 100.
