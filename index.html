@@ -3,78 +3,12 @@
     <head>
         <meta charset="utf-8" />
         <title>Dana Van Personal Page</title>
-        <style>
-            body {
-                font-family: "Palatino Linotype", Palatino, "Times New Roman", Times, serif;
-                line-height: 1.6;
-                margin: 2rem;
-                max-width: 800px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            header {
-                display: block;
-                text-align: center;
-                gap: 1.5rem;
-                margin-bottom: 2rem;
-            }
-
-            h1, h2, h3 {
-                font-family: "Georgia", serif;
-                margin-bottom: 0rem;
-            }
-
-            p, ul {
-                margin-left: 2rem;
-                padding-left: 1rem;
-                margin-top: 0rem;
-                margin-bottom: 2rem;
-            }
-
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                border: none;
-                margin-top: 0rem;
-                margin-bottom: .5rem;
-            }
-
-            .job-table.job-last {
-              margin-bottom: 2rem;
-            }
-            
-            .job-header td,
-            .job-description td {
-              padding: 0; 
-            }
-
-            td {
-                border: none;
-                text-align: left;
-                padding: 0rem;
-            }
-
-             .flex-table {
-                margin-left: 2rem;
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .job {
-                margin-bottom: 2rem;
-            }
-
-            .job-description {
-                font-family: "Georgia", serif;
-                font-style: italic;
-            }
-        </style>
+        <link rel="stylesheet" href="styles/styles.css">
+        <!-- <link rel="stylesheet" href="styles/styles.css"> -->
     </head>
 
     <body>
-    <!-- headshot photo, name, and some subheading (socials)-->
+    <!-- headshot photo, name, and some subheading (socials) -->
         <header>
             <img src="images/headshot.jpg" alt="headshot" style="width: 300px; height: auto;">
             <h1 id="name">Dana Van</h1>
@@ -85,40 +19,63 @@
                 <a href="mailto:dana.van@email.ucr.edu">Email</a>
             </p>
         </header>
+
+    <hr class="section-divider">
+
+    <!-- navigation row -->
+     <nav class="icon-nav">
+        <a href="#about-me" title="About Me">
+            <img src="images/icons/user.png" alt="Me">
+            <span class="icon-label">About Me</span></a>
+        <a href="#work-experience" title="Work Experience">
+            <img src="images/icons/corporate-alt.png" alt="Work">
+            <span class="icon-label">Work Experience</span></a>
+        <a href="#education" title="Education">
+            <img src="images/icons/graduation-cap.png" alt="Education">
+            <span class="icon-label">Education</span></a>
+        <a href="#courses" title="Coursework">
+            <img src="images/icons/workshop.png" alt="Coursework">
+            <span class="icon-label">Coursework</span></a>
+        <a href="#skills" title="Skills">
+            <img src="images/icons/user-skill-gear.png" alt="Skills">
+            <span class="icon-label">Skills</span></a>
+        <a href="#projects" title="Projects">
+            <img src="images/icons/master-plan.png" alt="Projects">
+            <span class="icon-label">Projects</span></a>
+    </nav>
+
+    <hr class="section-divider">
     
-    <!-- about me, work experience, education, coursework-->
-        <h3 id="about-me">About Me</h3>
+    <!-- about me, work experience, education, coursework -->
+        <h3 id="about-me"><img src="images/icons/user.png" alt="Me icon" class="icon">About Me</h3>
         <p>Hello! My name is Dana, and I am a Statistics major at UC Riverside. </p>
 
-        <h3 id="work-experience">Work Experience</h3>
-        <table>   
-            <!-- job 1-->
-                <tr class="job-header">
-                    <td><strong>Jia Lab Pomegranate Breeding Team</strong></td>
-                    <td>Undergraduate Researcher</td>
-                    <td>March 2024 - Present</td>
-                </tr>
-                <tr class="job-description">
-                    <td colspan="3">
-                        Initially, I worked with the DNA Barcoding team by gathering samples and preparing for DNA extraction. Now, I am working with the Bioinformatics team by applying statistical models on collected data.
-                    </td>
-                </tr>
-        </table>
-        <table>
-            <!-- job 2-->
-                <tr class="job-header">
-                    <td><strong>Huntington Beach High School</strong></td>
-                    <td>Honors & AP Bio Teacher Assistant</td>
-                    <td>Sep 2023 - June 2024</td>
-                </tr>
-                <tr class="job-description">
-                    <td colspan="3">
-                        I collaborated with fellow student TAs and instructors for course planning and to ensure timely grading. I also communicated with students in missing coursework and submission errors on the Canvas platform. 
-                    </td>
-                </tr>
-        </table>
+        <h3 id="work-experience"><img src="images/icons/corporate-alt.png" alt="Work icon" class="icon">Work Experience</h3>
+        <div class="job-entry">   
+            <!-- job 1 -->
+                <div class="job-header">
+                    <div class="job-company"><strong>Jia Lab Pomegranate Breeding Team, </strong></div>
+                    <div class="job-title">Undergraduate Researcher </div>
+                    <div class="job-dates">March 2024 - Present</div>
+                </div>
+                <div class="job-description">
+                    Initially, I worked with the DNA Barcoding team by gathering samples and preparing for DNA extraction. Now, I am working with the Bioinformatics team by applying statistical models on collected data.
+                </div>
+        </div>
+        <div class="job-entry">
+            <!-- job 2 -->
+                <div class="job-header">
+                    <div class="job-company"><strong>Huntington Beach High School, </strong></div>
+                    <div class="job-title">Honors & AP Bio Teacher Assistant </div>
+                    <div class="job-dates">September 2023 - June 2024</div>
+                </div>
+                <div class="job-description">
+                    I collaborated with fellow student TAs and instructors for course planning and to ensure timely grading. I also communicated with students in missing coursework and submission errors on the Canvas platform. 
+                </div>
+        </div>
 
-        <h3 id="education">Education</h3>
+        
+        <h3 id="education"><img src="images/icons/graduation-cap.png" alt="School icon" class="icon">Education</h3>
                 <div class="flex-table">
             <div class="education">
                 <div class="row">
@@ -129,7 +86,7 @@
             </div>
         </div>
 
-        <h3 id="courses">Coursework</h3>
+        <h3 id="courses"><img src="images/icons/workshop.png" alt="Coursework icon" class="icon">Coursework</h3>
         <ul>
             <li>CS 100: Software Construction</li>
             <li>CS 010C: Intro to Data Structures and Algorithms</li>
@@ -138,7 +95,7 @@
         </ul>
 
     <!-- skills, projects -->
-        <h3 id="skills">Skills</h3>
+        <h3 id="skills"><img src="images/icons/user-skill-gear.png" alt="Skill icon" class="icon">Skills</h3>
         <ul>
             <li>C++ / GDScript </li>
             <li> R / SQL </li>
@@ -146,21 +103,23 @@
             <li>Figma / PowerBI / Canva</li>
         </ul>
 
-        <h3 id="projects">Projects</h3>
+        <h3 id="projects"><img src="images/icons/master-plan.png" alt="Project icon" class="icon">Projects</h3>
         <ul>
             <li>
                 <strong>Rhythm Game</strong> – A music-based game where players try to sync tapping on keyboard keys to the beat created for CS 100.
                 <a href="https://github.com/wandering-dotcom/rhythm_game_CS100" target="_blank">GitHub repository</a> |
-                <a href="images/rhythm.mp4" target="_blank">video demo</a>
+                <a href="images/rhythm.mp4" target="_blank">demo</a>
             </li>
             <li>
                 <strong>Blood Bag Agitator</strong> – A medical device that continuously agitates blood to preserve its quality presented at BMES (Biomedical Engineering Society) at UC Riverside's BearHack.
-                <a href="https://github.com/byranne/BearMax" target="_blank">GitHub repository</a> | 
-                <a href="https://bearhackucr.carrd.co" target="_blank">BearHack</a>
+                <a href="https://bearhackucr.carrd.co" target="_blank">BearHack</a> |
+                <a href="https://github.com/byranne/BearMax" target="_blank">GitHub repository</a> |
+                <a href="images/BearMax_video.mov" target="_blank">demo</a>
             </li>
             <li>
                 <strong>Manhattan Financial Real Estate Submarket Analysis</strong> – An analysis on recommended Manhattan financial submarkets to invest in presented at UC Los Angeles's DataFest.
-                <a href="http://datafest.stat.ucla.edu" target="_blank">UCLA DataFest</a>
+                <a href="http://datafest.stat.ucla.edu" target="_blank">UCLA DataFest</a> |
+                <a href="images/C15Pylanders.pdf.pdf" target="_blank">presentation</a>
         </ul>
     </body>
 </html>
