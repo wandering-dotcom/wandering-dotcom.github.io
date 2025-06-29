@@ -52,7 +52,7 @@ html {
 /* icon nav - base style */
 .icon-nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
     padding: 0.75rem 1rem;
@@ -73,6 +73,7 @@ html {
 .icon-nav a img {
     width: 30px;
     height: 30px;
+    object-fit: contain;
     transition: transform 0.2s ease;
 }
 
@@ -95,7 +96,7 @@ html {
     opacity: 1;
 }
 
-/* Responsive tweaks for mobile */
+/* responsive tweaks for mobile */
 @media (max-width: 600px) {
     .icon-nav {
         gap: 1.2rem;
@@ -110,6 +111,17 @@ html {
     .icon-label {
         font-size: 0.8rem;
     }
+}
+
+@media (max-width: 768px) {
+  .icon-nav {
+    justify-content: center;
+  }
+
+  .icon-nav a {
+    flex: 1 1 30%; /* 3 icons per row */
+    max-width: 33%;
+  }
 }
 
 .job-header {
@@ -148,4 +160,12 @@ td {
 .job-description {
     font-family: "Georgia", serif;
     font-style: italic;
+}
+
+/* horizontal line element */
+.section-divider {
+  border: none;
+  border-top: 2px solid #4a462c;
+  margin: 0rem 0 0rem 0;
+  width: 100%
 }
