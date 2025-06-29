@@ -50,8 +50,9 @@ table {
     margin-bottom: 2rem;
 }
             
-.job-header td,
-.job-description td {
+.job-header div,
+.job-description {
+    margin-left: 1rem;
     padding: 0; 
 }
 
