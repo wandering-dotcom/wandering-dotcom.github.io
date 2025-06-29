@@ -37,15 +37,6 @@ p, ul {
     margin-bottom: 2rem;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border: none;
-    margin-top: 0rem;
-    margin-left: 1rem;
-    margin-bottom: .5rem;
-}
-
 .job-table.job-last {
     margin-bottom: 2rem;
 }
